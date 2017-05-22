@@ -1,6 +1,6 @@
 ---
   url:
-    description: "URL to Docker socket"
+    description: "Path to Docker socket or URI to Docker Daemon"
     type: "string"
     required: true
     default: "unix:///var/run/docker.sock"
