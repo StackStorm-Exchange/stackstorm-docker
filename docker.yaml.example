@@ -10,7 +10,7 @@
     since: null
     before: null
   build_options:
-    rm: false,
-    quiet: false,
-    nocache: false,
+    rm: false
+    quiet: false
+    nocache: false
     timeout: 10
