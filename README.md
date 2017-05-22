@@ -42,8 +42,10 @@ YMMV if you use versions not listed here.
 
 ## Configuration
 
-1. Edit config.yaml and look at the options. These options mirror the options
-   of docker CLI.
+Copy the example configuration in [docker.yaml.example](./docker.yaml.example)
+to `/opt/stackstorm/configs/docker.yaml` and edit as required.
+
+These options mirror the options of docker CLI.
 
 ## Notes
 

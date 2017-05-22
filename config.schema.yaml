@@ -1,0 +1,67 @@
+---
+  url:
+    description: "Path to Docker socket or URI to Docker Daemon"
+    type: "string"
+    required: true
+    default: "unix:///var/run/docker.sock"
+  version:
+    description: "Docker version - e.g. 1.13"
+    type: "string"
+    required: true
+    default: "1.13"
+  timeout:
+    description: "Docker timeout"
+    type: "integer"
+    default: 60
+  poll_interval:
+    description: "Docker poll interval"
+    type: "integer"
+    default: 5
+  ps_options:
+    description: "Container list options."
+    type: "object"
+    required: true
+    additionalProperties: false
+    properties:
+      quiet:
+        description: "Set to True to only display numeric IDs"
+        type: "boolean"
+        default: false
+      trunc:
+        description: "Set to False to truncate output"
+        type: "boolean"
+        default: true
+      latest:
+        description: "Show the latest created container (default false)"
+        type: "boolean"
+        default: false
+      since:
+        description: "Filters containers created since given ID or name"
+        type: "string"
+        default: null
+      before:
+        description: "Filters containers created before given ID or name"
+        type: "string"
+        default: null
+  build_options:
+    description: "Build options."
+    type: "object"
+    required: true
+    additionalProperties: false
+    properties:
+      rm:
+        description: "Set to true to remove intermediate containers"
+        type: "boolean"
+        default: false
+      quiet:
+        description: "Quiet build - default false"
+        type: "boolean"
+        default: false
+      nocache:
+        description: "Build cache - set to True to use no cache"
+        type: "boolean"
+        default: false
+      timeout:
+        description: "Build timeout in seconds - default 10s"
+        type: "integer"
+        default: 10
