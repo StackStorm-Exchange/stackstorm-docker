@@ -79,8 +79,7 @@ class DockerSensor(PollingSensor):
         # Note: We pass all=False since we want to manually detect stopped containers
         containers = self._client.containers(quiet=opts['quiet'], all=False,
                                              trunc=opts['trunc'], latest=opts['latest'],
-                                             since=opts['since'], before=opts['before'],
-                                             limit=opts['limit'])
+                                             since=opts['since'], before=opts['before'])
         return self._to_dict(containers)
 
     def _to_dict(self, containers):
