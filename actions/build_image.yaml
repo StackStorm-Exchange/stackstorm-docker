@@ -1,6 +1,6 @@
 ---
 name: build_image
-runner_type: run-python
+runner_type: python-script
 description: Build docker image action. Equivalent to docker build.
 enabled: true
 entry_point: build_image.py

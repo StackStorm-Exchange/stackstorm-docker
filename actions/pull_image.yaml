@@ -1,6 +1,6 @@
 ---
 name: pull_image
-runner_type: run-python
+runner_type: python-script
 description: Pull docker image action. Equivalent to docker pull.
 enabled: true
 entry_point: pull_image.py
