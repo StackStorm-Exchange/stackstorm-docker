@@ -47,6 +47,10 @@ to `/opt/stackstorm/configs/docker.yaml` and edit as required.
 
 These options mirror the options of docker CLI.
 
+**Note** : When modifying the configuration in `/opt/stackstorm/configs/` please
+           remember to tell StackStorm to load these new values by running
+           `st2ctl reload --register-configs`
+
 ## Notes
 
 If you are connecting to the Docker daemon via the Unix socket, you need to
