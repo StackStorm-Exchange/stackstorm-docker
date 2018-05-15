@@ -1,5 +1,9 @@
 # Change Log
 
+# 0.3.2
+
+- Minor linting fixes
+
 # 0.3.0
 
 - Updated action `runner_type` from `run-python` to `python-script`
