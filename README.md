@@ -34,7 +34,7 @@ This sensor exposes the following triggers:
 
 ## Requirements
 
-1. Python 2.7 or greater
+1. Python 3.6 or greater
 2. docker-io (version 1.13 or later)
 3. pip install docker-py (0.4.0 or later)
 
