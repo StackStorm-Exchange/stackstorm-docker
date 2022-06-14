@@ -1,0 +1,11 @@
+---
+name: container_get
+runner_type: python-script
+description: Return the container object from the given name or ID. Return None if the container does not exist
+enabled: true
+entry_point: container_get.py
+parameters:
+  container:
+    type: string
+    description: Name or ID of the container to verify
+    required: true

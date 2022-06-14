@@ -1,7 +1,7 @@
 ---
   url: "unix:///var/run/docker.sock"
-  version: "20.10.16"
-  timeout: 60
+  version: auto
+  timeout: 3600
   poll_interval: 5
   ps_options:
     quiet: false
@@ -10,7 +10,7 @@
     since: null
     before: null
   build_options:
-    rm: false
+    rm: true
     quiet: false
     nocache: false
-    timeout: 10
+    timeout: 3600

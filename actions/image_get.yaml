@@ -1,0 +1,11 @@
+---
+name: image_get
+runner_type: python-script
+description: Return the image object from the given name or ID. Return None if the image does not exist
+enabled: true
+entry_point: image_get.py
+parameters:
+  image:
+    type: string
+    description: Name or ID of the image to verify
+    required: true

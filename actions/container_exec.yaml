@@ -1,0 +1,15 @@
+---
+name: container_exec
+runner_type: python-script
+description: Run a command inside the given container. Similar to docker exec.
+enabled: true
+entry_point: container_exec.py
+parameters:
+  cmd:
+    type: string
+    description: Command to be executed on the given container
+    required: true
+  container:
+    type: string
+    description: Name or ID of the container to run the given command on
+    required: true

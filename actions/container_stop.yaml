@@ -1,0 +1,11 @@
+---
+name: container_stop
+runner_type: python-script
+description: Stop the given container
+enabled: true
+entry_point: container_stop.py
+parameters:
+  container:
+    type: string
+    description: Name or ID of the container to stop
+    required: true

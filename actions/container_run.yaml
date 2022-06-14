@@ -1,0 +1,29 @@
+---
+name: container_run
+runner_type: python-script
+description: Run a container. By default, it will wait for the container to finish and return its logs, similar to docker run
+enabled: true
+entry_point: container_run.py
+parameters:
+  cmd:
+    type: string
+    description: Command to be executed on the given container
+    required: true
+  container_name:
+    type: string
+    description: Name of the container run
+    required: false
+  detach:
+    type: boolean
+    description: Run container in the background and return a Container object
+    required: true
+    default: false
+  image:
+    type: string
+    description: Name or ID of the image to create a container from
+    required: true
+  remove:
+    type: boolean
+    description: Remove the container when it has finished running
+    required: true
+    default: false

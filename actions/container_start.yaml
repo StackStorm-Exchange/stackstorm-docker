@@ -1,0 +1,11 @@
+---
+name: container_start
+runner_type: python-script
+description: Start the given container. Similar to the docker start command, but doesn’t support attach options.
+enabled: true
+entry_point: container_start.py
+parameters:
+  container:
+    type: string
+    description: Name or ID of the container to start
+    required: true

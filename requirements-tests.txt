@@ -2,4 +2,5 @@ docker
 orjson
 importlib
 importlib-resources
+importlib.util
 udatetime
