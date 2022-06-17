@@ -7,7 +7,7 @@ entry_point: pull_image.py
 parameters:
   all_tags:
     type: boolean
-    description: Pull all image tags. If True then tag param is	ignored.
+    description: Pull all image tags. If True then tag param is ignored.
     default: false
   auth_password_override:
     type: string

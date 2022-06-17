@@ -27,4 +27,3 @@ parameters:
   tag:
     type: string
     description: Tag to use for this image (optional).
-

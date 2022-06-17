@@ -1,5 +1,3 @@
-import os
-import docker
 from lib.base import DockerBasePythonAction
 
 __all__ = [

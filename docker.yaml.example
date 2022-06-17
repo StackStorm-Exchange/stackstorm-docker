@@ -1,6 +1,6 @@
 ---
   url: "unix:///var/run/docker.sock"
-  version: "20.10.16"
+  version: "1.41"
   timeout: 60
   poll_interval: 5
   ps_options:

@@ -16,7 +16,7 @@ class ContainerExec(DockerBasePythonAction):
         output = result[1].decode('utf-8')
 
         # The exec_run function does not automaticcaly raise an error if it fails
-        if exit_code is not 0:
+        if exit_code != 0:
             raise Exception(output)
 
         return output
